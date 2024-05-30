@@ -1,0 +1,52 @@
+/* PC */
+@media (min-width: 992px) {
+}
+/* Tablet & moblie */
+@media (max-width: 991.98px) {
+  /* ẩn navbar */
+  .navbar {
+    display: none;
+  }
+  /* chuyển logo vào giữa  */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* căn lại vị trí menu icon */
+  .menu-header__icon {
+    position: absolute;
+    top: 37px;
+    left: 30px;
+    color: #fff;
+    width: 24px;
+  }
+  /* overlay */
+  .menu-overlay{
+    position: fixed;
+    background: rgba(0, 0 , 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* check menu-checkbox  */
+  .menu-checkbox:checked ~ .menu-overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+  }
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* Mobile */
+@media (max-width: 767.98px) {
+}
+
+.hero, .footer, main{
+    display: none;
+}
